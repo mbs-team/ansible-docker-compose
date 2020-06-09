@@ -1,9 +1,5 @@
-FROM hyperized/scratch:latest as trigger
-# Used to trigger Docker hubs auto build, which it wont do on the official images
+FROM mbsteam/ansible-docker:latest
 
-FROM hyperized/ansible-docker:2.8-bionic
-
-LABEL maintainer="Gerben Geijteman <gerben@hyperized.net>"
 LABEL description="Ubuntu Bionic with Ansible 2.8, cURL and Docker Compose"
 
 RUN apt-get -y install curl && \
