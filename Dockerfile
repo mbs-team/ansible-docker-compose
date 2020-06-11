@@ -1,4 +1,4 @@
-FROM mbsteam/ansible-docker:latest
+FROM mbsteam/ansible-docker:2.9
 
 LABEL description="Ubuntu Bionic with Ansible 2.8, cURL and Docker Compose"
 
